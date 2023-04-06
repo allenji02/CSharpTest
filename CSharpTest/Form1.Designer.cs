@@ -35,6 +35,7 @@
             withdrawTextBox = new TextBox();
             depositTextBox = new TextBox();
             outputTextBox = new RichTextBox();
+            createVIPButton = new Button();
             SuspendLayout();
             // 
             // createButton
@@ -99,11 +100,22 @@
             outputTextBox.TabIndex = 6;
             outputTextBox.Text = "";
             // 
+            // createVIPButton
+            // 
+            createVIPButton.Location = new Point(197, 74);
+            createVIPButton.Name = "createVIPButton";
+            createVIPButton.Size = new Size(133, 34);
+            createVIPButton.TabIndex = 7;
+            createVIPButton.Text = "创建 VIP 账户";
+            createVIPButton.UseVisualStyleBackColor = true;
+            createVIPButton.Click += createVIPButton_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(11F, 24F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(createVIPButton);
             Controls.Add(outputTextBox);
             Controls.Add(depositTextBox);
             Controls.Add(withdrawTextBox);
@@ -126,5 +138,6 @@
         private TextBox withdrawTextBox;
         private TextBox depositTextBox;
         private RichTextBox outputTextBox;
+        private Button createVIPButton;
     }
 }

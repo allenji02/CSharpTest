@@ -42,5 +42,12 @@ namespace CSharpTest
         {
             outputTextBox.Text += "\n" + "余额为：" + account.Balance + "\n";
         }
+
+        private void createVIPButton_Click(object sender, EventArgs e)
+        {
+            account=new VIPAccount();
+            outputTextBox.Text += "\n" + "创建 VIP 账户成功，用户卡号为："
+                + account.CreditNo + "\n";
+        }
     }
 }
